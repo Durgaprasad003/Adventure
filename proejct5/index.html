@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+   
+
+        
+        
+        <div class="nav">
+            <a href="" class="logo">Adventure</a>
+            <ul class="navlist">
+         <li><a href="">Home</a></li>
+         <li><a href="">Explore</a></li>
+         <li><a href="">About</a></li>
+         <li><a href="" class="btn">Contact</a></li>
+         
+        </ul>
+        <img src="img/menu-btn.png" alt="" class="menu">
+        
+    </div>
+
+    <div class="header">
+       
+        <div class="h-content">
+            <h2>Explore the world</h2>
+            <div class="line"></div>
+            <div class="lines">
+                <h1>A WONDERFUL GIFT</h1>
+                <a href="" class="btn">Learn More</a>
+            </div> 
+        </div>
+
+    </div>
+    <Script>
+        const menu=document.getElementsByClassName("menu");
+        const navlist=document.getElementsByClassName("navlist")
+        menu.addEventListener("click",()=>{
+            navlist.classList.toggle('m')
+        })
+
+    </Script>
+
+
+</body>
+
+</html>

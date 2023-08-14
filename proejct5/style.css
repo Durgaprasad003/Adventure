@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+     font-size: 10px; 
+}
+
+
+.header{
+    width: 100vw;
+    height:100vh;
+    background-image: url(img/header-bg.png);
+    background-size: cover;
+    background-position:bottom;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav{
+    height:7vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #656778;
+    color: white;
+    /* position: sticky;     */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0rem 2rem;
+}
+.nav .logo{
+    color:white;
+    font-size: 5vmin;
+}
+.nav .navlist{
+    display: flex;align-items: center;
+    gap: 8vmin;
+    font-size: 3vmin;
+    /* color: white; */
+    margin: 0 25px;
+}
+.navlist a{
+    color: white;
+}
+.h-content{
+    /* margin-bottom: 15rem; */
+    color: whitesmoke;
+    text-align: center;
+    
+
+}
+
+.h-content h2{
+    font-size: 5vmin;
+    
+   
+}
+.line{
+    width: 35vmin;
+    height: 0.6vmin;
+    background-color: rgb(248, 50, 83);
+    margin: 0.2rem auto;
+}
+/* .line{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+.h-content h1{
+    font-size:7vmin ;
+    margin-top:4vmin;
+    margin-bottom: 6vmin;
+}
+.btn{
+    color: whitesmoke;
+    width:10vw;
+    height: 1rem;
+    font-size: 3vmin;
+    /* border:2px solid pink; */
+    border-radius: 2rem;
+    background-color: pink;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+padding: 0px 6px;
+}
+.menu{
+    height: 2rem;
+    display: none;
+    cursor: pointer;
+}
+@media (max-width:854px) {
+.menu{
+    display: block;
+}
+.nav .navlist{
+    display: none;
+}
+.nav{
+    background-color:#1d2f3e;
+    
+}
+.btn{
+    width:10vw;
+    height: 1rem;
+    font-size: 4vmin;
+}
+
+}
